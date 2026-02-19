@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crypto Miner Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>💎 Crypto Miner Pro</header>
+
+<div class="game-container">
+  <div class="stats">
+    <p>Coins: <span id="coins">0</span></p>
+    <p>BTC Price: $<span id="btcPrice">0</span></p>
+    <p>Value: $<span id="coinValue">0</span></p>
+  </div>
+
+  <button id="mineBtn">⛏ Mine BTC</button>
+
+  <canvas id="coinChart" width="400" height="150"></canvas>
+
+  <div class="upgrades">
+    <h3>Upgrades / Boosters</h3>
+    <button class="upgradeBtn" data-cost="10" data-multiplier="1.5">Upgrade Pickaxe (Cost: 10)</button>
+    <button class="upgradeBtn" data-cost="50" data-multiplier="5">Buy Auto-Miner (Cost: 50)</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
